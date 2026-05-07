@@ -28,7 +28,6 @@
     color: var(--text);
     display: flex;
     min-height: 100vh;
-    
   }
 
   /* ─── SIDEBAR ─── */
@@ -158,10 +157,6 @@
   }
 
   .download-btn {
-    <a href="Chakrish_Nallabothula_Resume.pdf" download>Download CV</a>
-
-<a href="Chakrish_Resume_2026.pdf" download>Download CV</a>
-    
     display: flex; align-items: center; gap: 8px;
     background: var(--yellow);
     color: var(--dark);
@@ -452,7 +447,7 @@
   /* ─── ACHIEVEMENTS ─── */
   .achievements-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   .ach-card--merit {
@@ -744,11 +739,29 @@
     background: var(--dark);
     color: #888;
     text-align: center;
-    padding: 20px 50px;
+    padding: 28px 50px;
     font-size: .78rem;
     margin-left: 0;
   }
   footer span { color: var(--yellow); }
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .footer-socials a {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+    display: flex; align-items: center; justify-content: center;
+    color: #aaa;
+    font-size: .9rem;
+    text-decoration: none;
+    transition: .2s;
+    border: 1px solid rgba(255,255,255,.1);
+  }
+  .footer-socials a:hover { background: var(--yellow); color: var(--dark); transform: translateY(-3px); }
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
@@ -762,480 +775,4 @@
     section { padding: 40px 24px; }
   }
   @media (max-width: 600px) {
-    .services-grid, .achievements-grid, .contact-grid, .projects-grid { grid-template-columns: 1fr; }
-  }
-</style>
-</head>
-<body>
-
-<!-- ═══ SIDEBAR ═══ -->
-<aside class="sidebar">
-  <div class="avatar-wrap">
-    <!-- Avatar placeholder with initials -->
-    <div style="width:100px;height:100px;border-radius:50%;background:var(--dark);border:4px solid var(--yellow);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:var(--yellow);">CN</div>
-    <div class="avatar-badge"></div>
-  </div>
-
-  <div class="sb-name">Chakrish Nallabothula</div>
-  <div class="sb-title">Civil Engineer & Tech Innovator</div>
-
-  <div class="socials">
-    <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://instagram.com/chakrish_9" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://twitter.com/Chakrish141" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
-    <a href="mailto:chakrish@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
-  </div>
-
-  <table class="info-table">
-    <tr><td>SGPA</td><td><strong>9.0 / 10</strong></td></tr>
-    <tr><td>Year</td><td>1st Year B.Tech</td></tr>
-    <tr><td>Branch</td><td>Civil Engineering</td></tr>
-    <tr><td>Status</td><td class="available">Available</td></tr>
-    <tr><td>From</td><td>Chittoor, AP</td></tr>
-  </table>
-
-  <div class="sb-section-title">Skills</div>
-
-  <div class="skill-row"><div class="skill-label"><span>Python</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
-  <div class="skill-row"><div class="skill-label"><span>IoT</span><span>80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
-  <div class="skill-row"><div class="skill-label"><span>UI/UX Design</span><span>75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
-  <div class="skill-row"><div class="skill-label"><span>AutoCAD</span><span>70%</span></div><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
-  <div class="skill-row"><div class="skill-label"><span>Deep Learning</span><span>65%</span></div><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
-
-  <div class="sb-section-title">Extra Skills</div>
-  <ul class="extra-skills">
-    <li>Sustainable Infrastructure</li>
-    <li>Research & Academic Writing</li>
-    <li>GitHub & Version Control</li>
-    <li>Web Development (HTML/CSS)</li>
-    <li>Public Speaking</li>
-  </ul>
-
-  <a href="Chakrish_Nallabothula_Resume.pdf" download="Chakrish_Nallabothula_Resume.pdf" class="download-btn">
-    <i class="fas fa-download"></i> Download CV
-  </a>
-</aside>
-
-<!-- ═══ RIGHT NAV ═══ -->
-<nav class="right-nav">
-  <a href="#hero" class="active" title="Home"><i class="fas fa-home"></i></a>
-  <a href="#services" title="Services"><i class="fas fa-briefcase"></i></a>
-  <a href="#projects" title="Projects"><i class="fas fa-code"></i></a>
-  <a href="#achievements" title="Achievements"><i class="fas fa-trophy"></i></a>
-  <a href="#education" title="Education"><i class="fas fa-graduation-cap"></i></a>
-  <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
-</nav>
-
-<!-- ═══ MAIN ═══ -->
-<main>
-
-  <!-- HERO -->
-  <div class="hero" id="hero">
-    <div class="hero-bg-shape"></div>
-    <div class="hero-dots d1">◇</div>
-    <div class="hero-dots d2">○</div>
-    <div class="hero-dots d3">△</div>
-
-    <div class="hero-text">
-      <div class="hero-greeting">Hello, I'm</div>
-      <h1>Chakrish Nallabothula<br><span>Civil Engineer</span> &amp; Tech Innovator</h1>
-      <p>B.Tech Civil Engineering student at SRM University–AP with a passion for sustainable infrastructure, IoT, and AI-driven solutions. Tata Pankh Scholar & Pariksha Pe Charcha national participant.</p>
-      <a href="#contact" class="hire-btn">Hire Me <i class="fas fa-arrow-right"></i></a>
-    </div>
-
-    <div class="hero-photo">
-      <div style="width:100%;height:100%;border-radius:8px;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:4rem;color:var(--yellow);font-weight:800;">CN</div>
-      <div class="hero-photo-badge">SGPA 9.0<br>SRM University–AP</div>
-    </div>
-  </div>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="section-head">
-      <h2>What I Offer</h2>
-      <div class="underline-yellow"></div>
-      <p>A blend of civil engineering fundamentals and cutting-edge technology to build smarter, greener, and more connected infrastructure.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-building"></i></div>
-        <h3>Structural Design</h3>
-        <p>Applying engineering principles to design safe, efficient, and sustainable structures using modern tools.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-microchip"></i></div>
-        <h3>IoT Solutions</h3>
-        <p>Smart infrastructure monitoring using IoT sensors and real-time data pipelines for predictive maintenance.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-brain"></i></div>
-        <h3>AI & Deep Learning</h3>
-        <p>Research-grade deep learning models including retinal vessel segmentation using Attention U-Net architectures.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-leaf"></i></div>
-        <h3>Sustainable Infrastructure</h3>
-        <p>Designing eco-conscious civil solutions that align with green building standards and net-zero goals.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-palette"></i></div>
-        <h3>UI/UX Design</h3>
-        <p>Crafting intuitive, visually appealing digital interfaces for web and mobile applications.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fab fa-python"></i></div>
-        <h3>Python Development</h3>
-        <p>Building data pipelines, automation scripts, and ML-powered applications with Python.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-head">
-      <h2>My Projects</h2>
-      <div class="underline-yellow"></div>
-      <p>A snapshot of my research and development work spanning AI, civil engineering, and software.</p>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-thumb"><i class="fas fa-eye"></i></div>
-        <div class="project-body">
-          <span class="project-tag">Deep Learning · Research</span>
-          <h3>Retinal Vessel Segmentation</h3>
-          <p>Integrating Directional Convolution (DC) and Direction Guidance Module (DGM) into Attention U-Net with residual ConvBlocks on the DRIVE dataset for precise medical imaging.</p>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb"><i class="fas fa-globe"></i></div>
-        <div class="project-body">
-          <span class="project-tag">Web · Design</span>
-          <h3>Personal Portfolio Website</h3>
-          <p>Multi-iteration portfolio built with HTML/CSS/JS — dark-themed glassmorphism design with animated skill bars, scroll-reveal animations, hosted on GitHub Pages.</p>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb"><i class="fas fa-wifi"></i></div>
-        <div class="project-body">
-          <span class="project-tag">IoT · Infrastructure</span>
-          <h3>Smart Infrastructure Monitor</h3>
-          <p>IoT-based structural health monitoring prototype — real-time sensor data collection for early detection of civil infrastructure anomalies.</p>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb"><i class="fas fa-file-pdf"></i></div>
-        <div class="project-body">
-          <span class="project-tag">Python · Automation</span>
-          <h3>Automated Resume Generator</h3>
-          <p>Python + ReportLab based professional PDF resume builder with iterative layout refinement, custom sections, and typographic polish.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENTS -->
-  <section id="achievements">
-    <div class="section-head">
-      <h2>Achievements</h2>
-      <div class="underline-yellow"></div>
-      <p>Recognition earned through academic excellence and national-level participation.</p>
-    </div>
-    <div class="achievements-grid">
-      <div class="ach-card">
-        <div class="ach-ribbon">SRM AP</div>
-        <div class="ach-num">9.0</div>
-        <h3>SGPA – 1st Year</h3>
-        <p>Achieved a strong academic record at SRM University–Andhra Pradesh in B.Tech Civil Engineering.</p>
-        <div class="ach-tags">
-          <span>SRM AP University</span>
-        </div>
-      </div>
-      <div class="ach-card">
-        <div class="ach-ribbon">TATA</div>
-        <div class="ach-num"><i class="fas fa-award" style="font-size:1.6rem"></i></div>
-        <h3>Tata Pankh Scholarship</h3>
-        <p>Awarded the prestigious Tata Pankh Scholarship recognizing academic merit and potential.</p>
-        <div class="ach-tags">
-          <span>Ratan Tata</span><span>2023–24</span>
-        </div>
-      </div>
-      <div class="ach-card">
-        <div class="ach-ribbon">PMO</div>
-        <div class="ach-num"><i class="fas fa-users" style="font-size:1.6rem"></i></div>
-        <h3>Pariksha Pe Charcha</h3>
-        <p>National-level participant in Prime Minister's Pariksha Pe Charcha program — one of India's most prestigious student interactions.</p>
-        <div class="ach-tags">
-          <span>PMO India Office</span>
-        </div>
-      </div>
-      <div class="ach-card ach-card--merit">
-        <div class="ach-ribbon">CBSE</div>
-        <div class="ach-num" style="font-size:1.4rem;margin-bottom:4px;"><i class="fas fa-certificate"></i></div>
-        <h3>Merit Certificate<br>Social Science</h3>
-        <p>Awarded by the Central Board of Secondary Education for outstanding performance in Social Science at the Grade 10 board examinations.</p>
-        <div class="ach-tags">
-          <span>CBSE Board</span><span>Grade 10</span><span>Social Science</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="section-head">
-      <h2>Education</h2>
-      <div class="underline-yellow"></div>
-      <p>A journey of learning — from first steps in kindergarten to engineering at a premier university.</p>
-    </div>
-    <div class="edu-timeline">
-
-      <!-- B.Tech -->
-      <div class="edu-item">
-        <span class="edu-year">2025 – 2029</span>
-        <div class="edu-badge">SGPA 9.0 · Present</div>
-        <h3>B.Tech – Civil Engineering</h3>
-        <div class="inst"><i class="fas fa-university" style="color:var(--yellow);margin-right:6px"></i>SRM University–AP, Amaravati, Andhra Pradesh</div>
-        <p>Focusing on sustainable infrastructure, structural engineering, IoT integration, and AI-driven civil solutions. Active in research projects and technical clubs. Currently in 2026.</p>
-        <div class="edu-year-bold"><strong>2025 – 2029</strong></div>
-      </div>
-
-      <!-- 12th Grade -->
-      <div class="edu-item">
-        <span class="edu-year">2024 – 2025</span>
-        <div class="edu-badge">Grade 12 · CBSE</div>
-        <h3>Higher Secondary – Grade 12</h3>
-        <div class="inst"><i class="fas fa-school" style="color:var(--yellow);margin-right:6px"></i>Setteri Village School, Chittoor District, Andhra Pradesh</div>
-        <p>Completed Senior Secondary education under CBSE board with focus on Mathematics, Physics, and Chemistry — building the foundation for engineering entrance.</p>
-        <div class="edu-year-bold"><strong>2024 – 2025</strong></div>
-      </div>
-
-      <!-- 10th Grade -->
-      <div class="edu-item">
-        <span class="edu-year">2022 – 2023</span>
-        <div class="edu-badge">Grade 10 · CBSE</div>
-        <h3>Secondary School – Grade 10</h3>
-        <div class="inst"><i class="fas fa-school" style="color:var(--yellow);margin-right:6px"></i>Setteri Village School, Chittoor District, Andhra Pradesh</div>
-        <p>Completed Class 10 board exams under CBSE, earning a Merit Certificate in Social Science for outstanding academic performance.</p>
-        <div class="edu-year-bold"><strong>2022 – 2023</strong></div>
-      </div>
-
-      <!-- Middle School -->
-      <div class="edu-item">
-        <span class="edu-year">2017 – 2022</span>
-        <div class="edu-badge">Grades 6–9 · CBSE</div>
-        <h3>Middle School – Grades 6 to 9</h3>
-        <div class="inst"><i class="fas fa-school" style="color:var(--yellow);margin-right:6px"></i>Setteri Village School, Chittoor District, Andhra Pradesh</div>
-        <p>Developed strong foundations in core subjects including Mathematics, Science, Social Studies, and Languages under the CBSE curriculum.</p>
-        <div class="edu-year-bold"><strong>2017 – 2022</strong></div>
-      </div>
-
-      <!-- Primary School -->
-      <div class="edu-item">
-        <span class="edu-year">2014 – 2017</span>
-        <div class="edu-badge">Grades 3–5 · CBSE</div>
-        <h3>Primary School – Grades 3 to 5</h3>
-        <div class="inst"><i class="fas fa-school" style="color:var(--yellow);margin-right:6px"></i>Setteri Village School, Chittoor District, Andhra Pradesh</div>
-        <p>Continued primary education with a growing interest in numbers, science experiments, and social awareness activities.</p>
-        <div class="edu-year-bold"><strong>2014 – 2017</strong></div>
-      </div>
-
-      <!-- Kindergarten & Early School -->
-      <div class="edu-item">
-        <span class="edu-year">2011 – 2014</span>
-        <div class="edu-badge">KG – Grade 2 · CBSE</div>
-        <h3>Kindergarten & Early Primary – KG to Grade 2</h3>
-        <div class="inst"><i class="fas fa-school" style="color:var(--yellow);margin-right:6px"></i>Setteri Village School, Chittoor District, Andhra Pradesh</div>
-        <p>Started formal schooling — the very first steps of a lifelong learning journey at the same school that would shape the next 14 years.</p>
-        <div class="edu-year-bold"><strong>2011 – 2014</strong></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-head">
-      <h2>Get In Touch</h2>
-      <div class="underline-yellow"></div>
-      <p>I'm open to collaborations, research opportunities, and creative projects. Let's build something meaningful.</p>
-    </div>
-
-    <div class="contact-layout">
-
-      <!-- Left: info cards -->
-      <div class="contact-info">
-        <a class="contact-card" href="mailto:chakrishchowdhary@gmail.com">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-          <div>
-            <h4>Email</h4>
-            <p>chakrishchowdhary@gmail.com</p>
-          </div>
-        </a>
-        <a class="contact-card" href="https://linkedin.com" target="_blank">
-          <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-          <div>
-            <h4>LinkedIn</h4>
-            <p>Chakrish Nallabothula</p>
-          </div>
-        </a>
-        <a class="contact-card" href="https://instagram.com/chakrish_9" target="_blank">
-          <div class="contact-icon"><i class="fab fa-instagram"></i></div>
-          <div>
-            <h4>Instagram</h4>
-            <p>@chakrish_9</p>
-          </div>
-        </a>
-        <a class="contact-card" href="https://twitter.com/Chakrish141" target="_blank">
-          <div class="contact-icon"><i class="fab fa-x-twitter"></i></div>
-          <div>
-            <h4>X (Twitter)</h4>
-            <p>@Chakrish141</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Right: contact form -->
-      <div class="contact-form-wrap">
-        <div class="form-header">
-          <h3>Send Me a Message</h3>
-          <p>Fill in the form and I'll get back to you as soon as possible.</p>
-        </div>
-        <div id="form-success" class="form-success" style="display:none">
-          <i class="fas fa-check-circle"></i>
-          <strong>Message sent!</strong>
-          <span>Thanks for reaching out. I'll reply to you soon.</span>
-        </div>
-        <div id="form-error" class="form-error" style="display:none">
-          <i class="fas fa-exclamation-circle"></i>
-          <strong>Oops!</strong>
-          <span>Something went wrong. Please email me directly at <a href="mailto:chakrishchowdhary@gmail.com">chakrishchowdhary@gmail.com</a>.</span>
-        </div>
-        <div id="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="cf-name">Your Name <span>*</span></label>
-              <input type="text" id="cf-name" placeholder="e.g. Ravi Kumar" autocomplete="name">
-            </div>
-            <div class="form-group">
-              <label for="cf-email">Your Email <span>*</span></label>
-              <input type="email" id="cf-email" placeholder="you@example.com" autocomplete="email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="cf-subject">Subject <span>*</span></label>
-            <input type="text" id="cf-subject" placeholder="e.g. Collaboration Inquiry">
-          </div>
-          <div class="form-group">
-            <label for="cf-message">Message <span>*</span></label>
-            <textarea id="cf-message" rows="5" placeholder="Tell me about your project, opportunity, or question…"></textarea>
-          </div>
-          <button id="cf-submit" class="submit-btn" onclick="sendEmail()">
-            <span id="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
-            <span id="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <footer>
-    © 2025 <span>Chakrish Nallabothula</span> · Civil Engineer & Tech Innovator · SRM University–AP
-  </footer>
-
-</main>
-
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  // ── EmailJS setup ──────────────────────────────────────────────────
-  // SETUP STEPS (free, 2 minutes):
-  // 1. Go to https://www.emailjs.com and create a free account
-  // 2. Add a Gmail service → copy the Service ID below
-  // 3. Create an Email Template with these variables:
-  //      {{from_name}}, {{from_email}}, {{subject}}, {{message}}
-  //    Set "To Email" in the template to: chakrishchowdhary@gmail.com
-  // 4. Copy your Public Key from Account → API Keys
-  // 5. Replace the three placeholder values below:
-  const EMAILJS_PUBLIC_KEY  = 'AY_l_3-vaywN6IkzN';
-  const EMAILJS_SERVICE_ID  = 'service_2dgiwha';
-  const EMAILJS_TEMPLATE_ID = 'template_yf0hgtv';
-
-  emailjs.init(EMAILJS_PUBLIC_KEY);
-
-  function sendEmail() {
-    const name    = document.getElementById('cf-name').value.trim();
-    const email   = document.getElementById('cf-email').value.trim();
-    const subject = document.getElementById('cf-subject').value.trim();
-    const message = document.getElementById('cf-message').value.trim();
-
-    // Basic validation
-    if (!name || !email || !subject || !message) {
-      alert('Please fill in all required fields.');
-      return;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      alert('Please enter a valid email address.');
-      return;
-    }
-
-    const btn      = document.getElementById('cf-submit');
-    const btnText  = document.getElementById('btn-text');
-    const btnLoad  = document.getElementById('btn-loading');
-    btn.disabled   = true;
-    btnText.style.display = 'none';
-    btnLoad.style.display = 'inline';
-
-    const templateParams = {
-      from_name:  name,
-      from_email: email,
-      subject:    subject,
-      message:    message,
-      reply_to:   email
-    };
-
-    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-      document.getElementById('form-success').style.display = 'flex';
-      document.getElementById('form-error').style.display   = 'none';
-      document.getElementById('cf-name').value    = '';
-      document.getElementById('cf-email').value   = '';
-      document.getElementById('cf-subject').value = '';
-      document.getElementById('cf-message').value = '';
-    }, function(error) {
-      console.log('FAILED...', JSON.stringify(error));
-      document.getElementById('form-error').style.display   = 'flex';
-      document.getElementById('form-success').style.display = 'none';
-    }).finally(function() {
-      btn.disabled = false;
-      btnText.style.display = 'inline';
-      btnLoad.style.display = 'none';
-    });
-  }
-
-  // ── Animate skill bars on load ─────────────────────────────────────
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.querySelectorAll('.skill-fill').forEach(el => {
-        el.style.width = el.dataset.width + '%';
-      });
-    }, 400);
-  });
-
-  // ── Active right nav on scroll ─────────────────────────────────────
-  const sections = document.querySelectorAll('div[id], section[id]');
-  const navLinks = document.querySelectorAll('.right-nav a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 120) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  });
-</script>
-</body>
-</html>
+    .services-grid, .achievements-grid, .contact-grid, .projects-grid { grid-template-
